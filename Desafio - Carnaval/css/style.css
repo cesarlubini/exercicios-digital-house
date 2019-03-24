@@ -1,0 +1,143 @@
+/*GENERAL CSS/////////////////////////////////////////////////////////////*/
+*{
+  box-sizing:border-box;
+}
+
+body {
+  margin:0;
+  padding:0;
+  font-family: 'Raleway', sans-serif;
+}
+
+header {
+  width:100%;
+  height:60px;
+  background-color:#fff;
+  box-shadow: 0px 0px 10px #00000075;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1;
+}
+
+header span {
+  width:150px;
+  display:block;
+  float:left;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 60px;
+  padding-left:20px;
+}
+
+header nav {
+  width:400px;
+  display:block;
+  float:right;
+  text-align:right;
+}
+
+header nav ul {
+  margin:0;
+  padding:0 10px;
+}
+
+header nav ul a {
+  color: #000;
+}
+
+header nav ul li {
+  display:inline-block;
+  list-style-type:none;
+  line-height: 60px;
+  padding:0 10px;
+}
+
+footer {
+  width:100%;
+  height:40px;
+  background-color:#ddd;
+}
+
+footer p {
+  margin:0;
+  line-height: 40px;
+  text-align:center;
+}
+/*GENERAL CSS/////////////////////////////////////////////////////////////*/
+
+
+/*BANNER HOME/////////////////////////////////////////////////////////////*/
+section.banner {
+  width:100%;
+  height: calc(100vh - 40px);
+  background-image: url('../img/jane-home.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position: center center;
+}
+/*BANNER HOME/////////////////////////////////////////////////////////////*/
+
+
+/*ABOUT///////////////////////////////////////////////////////////////////*/
+main.about {
+  margin-top:100px;
+  text-align:center;
+}
+
+blockquote p.phrase{
+  font-weight:700;
+}
+
+blockquote p.author{
+  font-size:14px;
+}
+
+main.about img {
+  width:400px;
+  padding-bottom:50px;
+}
+/*ABOUT///////////////////////////////////////////////////////////////////*/
+
+
+/*MUSIC///////////////////////////////////////////////////////////////////*/
+main.music {
+  margin:100px auto 0;
+  width:960px;
+}
+
+main.music div.video iframe {
+  width:640px;
+  height:360px;
+}
+
+ul.no-bullet-list {
+  list-style-type:none;
+  padding:0px 0px 40px;
+  line-height:32px;
+}
+
+/*MUSIC///////////////////////////////////////////////////////////////////*/
+
+
+/*CONTACT/////////////////////////////////////////////////////////////////*/
+main.contact{
+  width:960px;
+  margin:100px auto 0;
+}
+
+div.info-contact {
+  border-bottom: 1px solid #ddd;
+}
+
+div.info-contact:last-child {
+  border-bottom: none;
+  margin-bottom:40px;
+}
+
+p.email, p.phone {
+  font-size:14px;
+}
+
+/*CONTACT/////////////////////////////////////////////////////////////////*/

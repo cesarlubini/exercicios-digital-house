@@ -1,0 +1,100 @@
+Tomando como referência as imagens na pasta "mockups", o objetivo é fazer os modelos correspondentes em html + css.
+
+O arquivo .css deve ir em uma pasta / css e as imagens em uma pasta / img
+
+Os arquivos do site estarão localizados na pasta raiz do nosso projeto.
+
+O site deve ser capaz de navegar sem problemas usando o menu de navegação.
+
+
+DETALHES TÉCNICOS E NAVEGAÇÃO
+Criar arquivos: 
+index.html,
+about.html,
+music.html,
+contact.html
+
+Google Fonts incluído no site
+https://fonts.google.com/
+========================
+'Raleway' 400 e 700
+
+Familia tipográfica general: 'Raleway', sans-serif;
+
+
+Ícones de mídia social
+=======================
+FontAwesome https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css
+Buscar iconos: https://fontawesome.com/icons?d=gallery
+
+
+Contact
+=======================
+O link de emails deve abrir o programa de email com as caixas identificadas no campo "para:"
+O link números de telefone devem oferecer a possibilidade de chamar o número selecionado.
+
+Music
+=========================
+
+A seção possui links internos de navegação da própria página:
+- Álbum: navegue até o disc player.
+- Vídeo: Organic Love: navegue até o primeiro vídeo
+- Vídeo: Street Light: navegue até o segundo vídeo
+- Ir para o topo: navegue até o topo da página.
+
+
+
+CONTEUDO DO SITE
+Sobre
+===============
+"Seattle-based pop star makes her indie debut with a hauntingly beautiful album"
+- John Tirckle, Music Today Post
+
+
+"Jane Doe is one of the scene's breakout stars"
+- John Tirckle, Music Today Post
+
+Music
+========================
+Video1:
+https://vimeo.com/135166028
+ Organic Love | 02:40
+ Twist In My Reality | 02:10
+ Street Light | 03:28
+ Love Don’t Live Here Anymore (Cover) | 03:49
+
+Video2:
+https://vimeo.com/134861419
+
+Directed by VINCE MALC & EMILIA COLE 
+Edited and Filmed by NICOLAS TROY 
+Produced by NIKI HEART, 
+Wix Films LTD.
+
+
+Contact
+=================================
+CONTACT INFO
+MANAGEMENT | Karen Blanche
+
+email: info@mysite.com
+phone: 123-456-7890 
+
+BOOKING | Daniel Ku
+
+email: info@mysite.com
+phone: 123-456-7890 
+
+LABEL | Wix Records, Jake Coldham
+
+email: info@mysite.com
+phone: 123-456-7890 
+
+PR | That Girl Pr, Sarah Brookstone
+
+email: info@mysite.com
+phone: 123-456-7890 
+
+
+
+

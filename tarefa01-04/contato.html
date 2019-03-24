@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta charset="utf-8" />
+    <title>CV - Cesar A. Lubini</title>
+  </head>
+
+  <body>
+    <header>
+      <h1> Currículo - Cesar A. Lubini</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Perfil</a></li>
+          <li>Dados Pessoais</li>
+          <li><a href="index.html#formacao-academica">Formação acadêmica</a></li>
+          <li>Experiência Profissional</li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li>Contato</li>
+        </ul>
+      </nav>
+    </header>
+    <section class="formulario">
+      <h2>Formulario de contato</h2>
+      <form>
+        <label for="nome-sobrenome">Nome e Sobrenome</label>
+        <input type="text" name="nome-sobrenome" id="nome-sobrenome" required>
+        
+        <label for="email">E-Mail</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="assunto">Assunto</label>
+        <select name="assunto" name="assunto" id="assunto">
+          <option selected disabled value="indefinido">Escolha uma Opção</option>
+          <option value="tenho-interesse">Tenho Interesse</option>
+          <option value="quero-contratar">Quero Contratar</option>
+          <option value="dicas-sugestoes">Dicas e Sugestões</option>
+        </select>
+        
+        <label for="genero">Gênero</label>
+        <input type="radio" name="genero" id="genero" value="feminino"> <span>Feminino</span>
+        <input type="radio" name="genero" id="genero" value="masculino"> <span>Masculino</span>
+        <input type="radio" name="genero" id="genero" value="prefiro-nao-responder"> <span>Prefiro não responder</span>
+        <label for="passatempo-contato">Passatempo</label>
+        <input type="checkbox" name="passatempo-contato" id="passatempo-contato" value="futebol"> <span>Futebol</span>
+        <input type="checkbox" name="passatempo-contato" id="passatempo-contato" value="video-game"> <span>Video-game</span>
+        <input type="checkbox" name="passatempo-contato" id="passatempo-contato" value="leitura"> <span>Leitura</span>
+        <input type="checkbox" name="passatempo-contato" id="passatempo-contato" value="cozinhar"> <span>Cozinhar</span>
+        <input type="checkbox" name="passatempo-contato" id="passatempo-contato" value="jardinagem"> <span>Jardinagem</span>
+        <label for="comentarios">Comentários</label>
+        <textarea name="comentarios" id="comentarios" required></textarea>
+        <button type="submit" value="submit">Enviar</button>
+        <button type="reset" value="reset">Excluir</button>
+
+      </form>
+    </section>
+  </body>
+</html>
