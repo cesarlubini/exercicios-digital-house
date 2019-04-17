@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exercicio 13</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    button {
+      padding:10px;
+      border-radius:3px;
+      margin:10px;
+      width:200px;
+      cursor:pointer;
+    }
+
+    input,
+    label {
+      margin:10px;
+      width:190px;
+    }
+
+    img {
+      margin:10px;
+    }
+  
+  </style>
+</head>
+<body>
+  <div>
+    <button onclick="cumprimentar()">Cumprimentar</button>
+  </div>
+  <div>
+    <button onclick="alterarBg()">Alterar Fundo</button>
+  </div>
+  <div>
+    <img id="vendoImagem" src="https://placekitten.com/200/200" alt="">
+  </div>
+  <div>
+    <img id="clicandoImagem" src="https://placekitten.com/200/210" alt="">
+  </div>
+
+  <div>
+    <form action="https://google.com.br">
+      <label for="nome">Nome</label><br>
+      <input type="text" id="nome"><br>
+
+      <label for="sobrenome">sobrenome</label><br>
+      <input type="text" id="sobrenome"><br>
+
+      <button onclick="erro()" >Enviar</button>
+    </form>
+  </div>
+
+
+
+
+
+  <script>
+  // função do primeiro botão, abre um alert ao clicar
+  function cumprimentar() {
+    alert("Olá");
+  }
+
+  //funcão do segundo botão, a cor do body é alterado
+  function alterarBg() {
+    document.body.style.backgroundColor = "#0097a7";
+  }
+
+  //adiciona um evento de mouseover a imagem
+  document.querySelector("#vendoImagem").addEventListener("mouseover", EstouVendo);
+  //função que faz printar no console "estou vendo a imagem"
+  function EstouVendo () {
+    console.log("estou vendo a imagem");
+  }
+
+  //adicionando um evendo click a imagem
+  document.querySelector("#clicandoImagem").addEventListener("click", estouClicando);
+  //função que faz printar no console "estou clicando na imagem"
+  function estouClicando () {
+    //pegando a posição X do mouse
+    let cordX = event.clientX;
+    //pegando a posição Y do mouse
+    let cordY = event.clientY;
+    console.log("estou clicando na imagem");
+    console.log("Minha cordenada é: " + cordX + " x "+ cordY);
+  }
+
+  //função que troca a cor do background da página
+  function backgroundRed () {
+    this.style.backgroundColor = "#e57373";
+  }
+
+  //adicionando um event listener ao body
+  document.body.addEventListener("click", backgroundRed);
+  //removendo um event listener ao body
+  document.body.removeEventListener("click",backgroundRed);
+
+  //função de erro que não deixa o usuario enviar o form
+  function erro () {
+    document.querySelector("form").removeAttribute("action");
+    alert("Não é possível enviar");
+  }
+
+  window.setTimeout(function () {alert("tempo esgotado!")}, 10000);
+  window.setInterval(function () {alert("hora do intervalo!")}, 5000);
+
+
+  </script>
+</body>
+</html>
