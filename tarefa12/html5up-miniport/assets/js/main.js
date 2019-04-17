@@ -53,8 +53,45 @@ for (let i=0; i < todosIcones.length;i++) {
   todosIcones[i].style.color = "red";
 }
 
-//teste
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-let btnNovo = document.querySelector("#abracadabra");
-let wrap = document.querySelector("div");
-console.log(wrap);
+function imgAbracadabra () {
+  document.querySelector("#lechuza").style.opacity = "0";
+}
+
+function imgAlakazan () {
+  document.querySelector("#lechuza").style.opacity = "1";
+}
+
+//pega o botão abracadabra da página
+let btnAbracadabra = document.querySelector("#abracadabra");
+
+//evento que faz a imagem da coruja desaparecer
+btnAbracadabra.addEventListener("click", imgAbracadabra);
+
+//duplica o botão abracadabra e o coloca em uma variável (btnAlakazan)
+let btnAlakazan = btnAbracadabra.cloneNode(true);
+
+//troca o id do botao alakazan
+btnAlakazan.id = "alakazan";
+//troca o texto do botao alakazan
+btnAlakazan.innerHTML = "Alakazan";
+
+//evento que faz a imagem da coruja aparecer
+btnAlakazan.addEventListener("click", imgAlakazan);
+
+
+//printa o botão alakazan na tela
+document.querySelector(".\\038"+"u").append(btnAlakazan);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//traduzindo todos os textos do menu do topo
+document.querySelector("#top").textContent = "Topo";
+document.querySelector("#work").textContent = "Trabalho";
+document.querySelector("#portfolio").textContent = "Portfólio";
+document.querySelector("#contact").textContent = "Contato";
+
+//removendo o ícone do FourSquare do rodapé
+let socialBtns = document.querySelector(".social");
+socialBtns.removeChild(socialBtns.lastElementChild);
