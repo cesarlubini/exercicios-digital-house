@@ -113,6 +113,134 @@
     }
     $iDoWhileCont++;
   } while ($iDoWhileCont < count($numerosRand));
+  echo "<hr>";
+////////////////////////////////////////////////////
+
+  function printLetters() {
+    $rangeLetters = range("a","o");
+    for ($i = 0; $i < count($rangeLetters); $i++) {
+      echo "Na posição $i, está o valor: $rangeLetters[$i] <br>";
+    }
+  }
+
+  printLetters();
+
+  echo "<hr>";
+////////////////////////////////////////////////////
+
+  $mascote = [
+    "animal" => "gato",
+    "idade" => "4",
+    "altura" => "0,30",
+    "nome" => "Nalla"
+  ];
+
+  foreach ($mascote as $key => $value) {
+    echo $key . ": " . $value . "<br>";
+  }
+
+  echo "<hr>";
+////////////////////////////////////////////////////
+
+  $ceu = array(
+    "Itália"=>"Roma",
+    "Luxemburgo"=>"Luxemburgo",
+    "Bélgica"=> "Bruxelas",
+    "Dinamarca"=>"Copenhagen",
+    "Finlândia"=>"Helsinki",
+    "França" => "Paris",
+    "Eslováquia"=>"Bratislava",
+    "Eslovênia"=>"Liubliana",
+    "Alemanha" => "Berlim",
+    "Grécia" => "Atenas",
+    "Irlanda"=>"Dublin",
+    "Holanda"=>"Amsterdã",
+    "Portugal"=>"Lisboa",
+    "Espanha"=>"Madri",
+    "Suécia"=>"Estocolmo",
+    "Reino Unido"=>"Londres",
+    "Chipre"=>"Nicósia",
+    "Lituânia"=>"Vilnius",
+    "RepúblicaTcheca"=>"Praga",
+    "Estônia"=>"Tallinn",
+    "Hungria"=>"Budapeste",
+    "Letônia"=>"Riga",
+    "Malta"=>"Valletta",
+    "Austria" => "Viena",
+    "Polônia"=>"Varsóvia"
+  );
+
+  ksort($ceu);
+
+  foreach ($ceu as $pais => $capital) {
+    echo "A capital da $pais é $capital <br>";
+  }
+
+  echo "<hr>";
+////////////////////////////////////////////////////
+
+  $ceu = [
+    "Argentina" => [
+      "naAmerica" => true,
+      "cidades" => [
+        "Buenos Aires",
+        "Córdoba",
+        "SantaFé"
+      ],
+    ],
+    "Brasil" => [
+      "naAmerica" => true,
+      "cidades" => [
+        "Brasília",
+        "Rio de Janeiro",
+        "São Paulo"
+      ]
+    ],
+    "Colômbia" => [
+      "naAmerica" => true,
+      "cidades" => [
+        "Cartagena",
+        "Bogotá",
+        "Barranquilla"
+      ]
+    ],
+    "França" => [
+      "naAmerica" => false,
+      "cidades" => [
+        "Paris",
+        "Nantes",
+        "Lyon"
+      ]
+    ],
+    "Itália" => [
+      "naAmerica" => false,
+      "cidades" => [
+        "Roma",
+        "Milão",
+        "Veneza"
+      ]
+    ],
+    "Alemanha" => [
+      "naAmerica" => false,
+      "cidades" => [
+        "Munique",
+        "Berlim",
+        "Frankfurt"
+      ]
+    ]
+  ];
+
+  foreach ($ceu as $pais => $array) {
+    if ($ceu[$pais]["naAmerica"]) {
+
+      echo "As cidades da $pais são: <br>";
+      echo "<ul>";
+      foreach ($ceu[$pais]["cidades"] as $cidades) {
+        echo  "<li>$cidades</li>";
+      }
+      echo "</ul>";
+    }
+  }
 ?>
 
 <style>
